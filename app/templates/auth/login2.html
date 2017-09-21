@@ -1,0 +1,9 @@
+{% import "bootstrap/utils.html" as utils %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% extends "base_login.html" %}
+<br/>
+{{ utils.flashed_messages() }}
+<br/>
+{% block body %}
+{{ wtf.quick_form(form) }}
+{% endblock %}
