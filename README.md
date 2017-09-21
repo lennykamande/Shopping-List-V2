@@ -1,4 +1,4 @@
-![Alt Text](https://github.com/lennykamande/Shopping-List-V2/Shopping-List-V2/master/shopping%20list.jpg)
+img src="https://raw.github.com/lennykamande/Shopping-List-V2/master/shopping list.jpg" />
 https://travis-ci.org/lennykamande/Shopping-List-V2.svg?branch=master
 
 The SHOPPING LIST V2.0
