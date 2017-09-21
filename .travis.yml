@@ -4,8 +4,13 @@ python:
 
 install:
   - pip install -r requirments.txt
+  - pip install coveralls
 
-script: "tests.py"
+script:  coverage run --source cookiecutter tests.py test
+
+
+after_success:
+    coveralls
 
 notifications:
   email:

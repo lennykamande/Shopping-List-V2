@@ -1,5 +1,6 @@
 ![featured-image](https://raw.githubusercontent.com/lennykamande/Shopping-List-V2/master/shopping-list.jpg)
-https://travis-ci.org/lennykamande/Shopping-List-V2.svg?branch=master
+[![Build Status](https://travis-ci.org/lennykamande/Shopping-List-V2.svg?branch=master)](https://travis-ci.org/lennykamande/Shopping-List-V2)
+<a href='https://coveralls.io/github/lennykamande/Shopping-List-V2?branch=master'><img src='https://coveralls.io/repos/github/lennykamande/Shopping-List-V2/badge.svg?branch=master' alt='Coverage Status' /></a>
 
 The SHOPPING LIST V2.0
 
