@@ -1,4 +1,5 @@
 ![featured-image](https://raw.githubusercontent.com/lennykamande/Shopping-List-V2/master/shopping-list.jpg)
+https://travis-ci.org/lennykamande/Shopping-List-V2.svg?branch=master
 
 The SHOPPING LIST V2.0
 
