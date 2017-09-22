@@ -1,5 +1,5 @@
 export FLASH_CONFIG=development
 export FLASH_APP=run.py
 
-Web: gunicorn app:app
+Web: python run.py
 
