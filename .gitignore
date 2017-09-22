@@ -1,4 +1,4 @@
 #Files that should be ignored
-.env
-.vscode
-.configpyc
+*.pyc
+instance/
+.vscode/
