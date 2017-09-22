@@ -1,4 +1,5 @@
-web: export FLASK_CONFIG=development 
-     export FLASK_APP=run.py
-     flask run
+export FLASH_CONFIG=development
+export FLASH_APP=run.py
+
+Web: gunicorn app:app
 
