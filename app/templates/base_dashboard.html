@@ -41,10 +41,15 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
                             {% if current_user.is_authenticated %}
+                              {% if current_user.is_admin %}
+                            <li><a href="{{ url_for('dashboard.admin_dashboard') }}">Dashboard</a></li>
+                            <li><a href="#">Roles</a></li>
+                            <li><a href="#">Users</a></li>
+                              {% else %}
                             <li><a href="{{ url_for('dashboard.homepage') }}">Dashboard</a></li>
+                              {% endif %}
                             <li><a href="{{ url_for('auth.logout') }}">Logout</a></li>
-                            <li><a><i class="fa fa-user"></i>  {{ current_user.username }}!</a></li>
-
+                            <li><a><i class="fa fa-user"></i>  Hi, {{ current_user.username }}!</a></li>
                             {%else%}
                 
                             <li><a href="{{ url_for('dashboard.homepage') }}">Home</a></li>

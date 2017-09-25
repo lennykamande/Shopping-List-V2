@@ -37,7 +37,7 @@ def register():
 def login():
     """
     Handle requests to the /login route
-    Log an employee in through the login form
+    Log an employee in through the login link
     """
     form = LoginForm()
     if form.validate_on_submit():
@@ -47,11 +47,14 @@ def login():
         user = User.query.filter_by(email=form.email.data).first()
         if user is not None and user.verify_password(
                 form.password.data):
-            # log user in
+            # log employee in
             login_user(user)
 
-            # redirect to the dashboard page after login
-            return redirect(url_for('dashboard.homepage'))
+            # redirect to the appropriate dashboard page
+            if user.is_admin:
+                return redirect(url_for('dashboard.admin_dashboard'))
+            else:
+                return redirect(url_for('dashboard.homepage'))
 
         # when login details are incorrect
         else:
